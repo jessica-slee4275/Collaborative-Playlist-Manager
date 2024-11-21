@@ -43,38 +43,47 @@ With the holiday season approaching, I wanted to create a fun and engaging game 
     <ul><li>User A creates a playlist and invites User B and C to add or remove songs.</li></ul>
 </ul>
 
-<h3>Real-time Collaborative Playlist Creation</h3>
+<h3>Song Voting and Automatic Sorting</h3>
 <ul>
   <li>Functionality</li>
-  <li>Key API</li>
+  <ul>
+    <li>Users can vote on songs (upvote/downvote).</li>
+    <li>The playlist dynamically sorts songs based on their vote counts.</li>
+  <li>Key Technology</li>
+    <ul>
+      <li>WebSocket: Real-time updates ensure votes are immediately reflected.</li>
+      <li>Sorting Algorithm: Dynamically reorders songs based on vote scores.</li>
+    </ul>
   <li>Example Scenario</li>
+    <ul><li>User A adds a song, and it receives 5 upvotes, automatically moving it to the top of the playlist.</li></ul>
 </ul>
-________________________________________
 
-2. Song Voting and Automatic Sorting
-•	Functionality:
-o	Users can vote on songs (upvote/downvote).
-o	The playlist dynamically sorts songs based on their vote counts.
-•	Key Technology:
-o	WebSocket: Real-time updates ensure votes are immediately reflected.
-o	Sorting Algorithm: Dynamically reorders songs based on vote scores.
-•	Example Scenario:
-o	User A adds a song, and it receives 5 upvotes, automatically moving it to the top of the playlist.
-3. Real-time Data Processing
-•	Functionality:
-o	All changes (song additions, deletions, votes) are synchronized in real-time.
-•	Key Technology:
-o	WebSocket: Ensures bi-directional communication between server and clients.
-o	Real-time updates for all users whenever changes occur.
-•	Example Scenario:
-o	User B adds a song, and User A and C instantly see the update in their playlist UI.
-________________________________________
-System Architecture
-•	Backend:
-o	Node.js (Express.js) or Python (FastAPI).
-o	WebSocket (Socket.IO for real-time communication).
-•	Frontend:
-o	React.js or Vue.js for dynamic UI updates.
-•	Database:
-o	Redis: Store and cache vote data in real-time.
-o	PostgreSQL: Persist playlist and user data.
+<h3>Real-time Data Processing</h3>
+<ul>
+  <li>Functionality</li>
+  <ul>
+    <li>All changes (song additions, deletions, votes) are synchronized in real-time.</li>
+  <li>Key Technology</li>
+    <ul>
+      <li>WebSocket: Ensures bi-directional communication between server and clients.</li>
+      <li>Real-time updates for all users whenever changes occur.</li>
+    </ul>
+  <li>Example Scenario</li>
+    <ul><li>User B adds a song, and User A and C instantly see the update in their playlist UI.</li></ul>
+</ul>
+
+<h2>System Architecture</h2>
+<ul>
+  <li>Backend</li>
+  <ul>
+    <li>Node.js (Express.js) or Python (FastAPI).</li>
+    <li>WebSocket (Socket.IO for real-time communication).</li>
+  </ul>
+  <li>Frontend</li>
+    <ul><li>React.js or Vue.js for dynamic UI updates.</li></ul>
+  <li>Database</li>
+    <ul>
+      <li>Redis: Store and cache vote data in real-time.</li>
+      <li>PostgreSQL: Persist playlist and user data.</li>
+    </ul>
+</ul>
