@@ -1,6 +1,7 @@
 <h1>Collaborative Playlist Manager with Voting</h1>
 <h2>Overview</h2>
 With the holiday season approaching, I wanted to create a fun and engaging game for parties with my friends. The idea is to dance to music and vote for the best songs while dancing. While Spotify already offers a Collaborative Playlist feature, it lacks a voting system. This project fills that gap by introducing a real-time voting system integrated into collaborative playlists.
+<br/>
 <h2>Key Features</h2>
 <h3>Real-time Collaborative Playlist</h3>
 <ul> 
@@ -27,6 +28,7 @@ With the holiday season approaching, I wanted to create a fun and engaging game 
   <li>Easily view the most popular songs in the playlist.</li>
   <li>Receive real-time notifications for playlist updates (e.g., "User X added a new song!").</li>
 </ul>
+<br/>
 <h2>Core Functionalities</h2>
 <h3>Real-time Collaborative Playlist Creation</h3>
 <ul>
@@ -71,7 +73,7 @@ With the holiday season approaching, I wanted to create a fun and engaging game 
   <li>Example Scenario</li>
     <ul><li>User B adds a song, and User A and C instantly see the update in their playlist UI.</li></ul>
 </ul>
-
+<br/>
 <h2>System Architecture</h2>
 <ul>
   <li>Backend</li>
