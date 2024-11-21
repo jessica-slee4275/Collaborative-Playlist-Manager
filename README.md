@@ -41,6 +41,7 @@ With the holiday season approaching, I wanted to create a fun and engaging game 
   <ul>
     <li>/v1/playlists: Create and update playlists via Spotify API.</li>
     <li>/v1/users/me: Verify playlist ownership and authenticate users.</li>
+  </ul>
   <li>Example Scenario</li>
     <ul><li>User A creates a playlist and invites User B and C to add or remove songs.</li></ul>
 </ul>
@@ -51,6 +52,7 @@ With the holiday season approaching, I wanted to create a fun and engaging game 
   <ul>
     <li>Users can vote on songs (upvote/downvote).</li>
     <li>The playlist dynamically sorts songs based on their vote counts.</li>
+    </ul>
   <li>Key Technology</li>
     <ul>
       <li>WebSocket: Real-time updates ensure votes are immediately reflected.</li>
@@ -65,6 +67,7 @@ With the holiday season approaching, I wanted to create a fun and engaging game 
   <li>Functionality</li>
   <ul>
     <li>All changes (song additions, deletions, votes) are synchronized in real-time.</li>
+  </ul>
   <li>Key Technology</li>
     <ul>
       <li>WebSocket: Ensures bi-directional communication between server and clients.</li>
